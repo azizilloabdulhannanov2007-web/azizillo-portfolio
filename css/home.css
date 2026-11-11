@@ -92,3 +92,12 @@
     max-width: 520px;
     color: var(--muted);
 }
+/* Featured kartalar tagi bir chiziqda */
+.featured__grid .project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured__grid .project-card .tags {
+    margin-top: auto;
+}

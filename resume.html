@@ -9,48 +9,28 @@
         />
         <title>Resume | Azizillo</title>
 
+        <script>
+            try {
+                document.documentElement.classList.add("js");
+                document.documentElement.dataset.theme =
+                    localStorage.getItem("theme") || "dark";
+            } catch (e) {}
+        </script>
+
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/components.css" />
         <link rel="stylesheet" href="css/resume.css" />
         <link rel="stylesheet" href="css/responsive.css" />
     </head>
-    <body>
-        <!-- ===== Header ===== -->
-        <header class="header">
-            <div class="container header__inner">
-                <a href="index.html" class="logo">Azizillo<span>.</span></a>
-
-                <nav class="nav" aria-label="Main navigation">
-                    <ul class="nav__list">
-                        <li><a href="index.html" class="nav__link">Home</a></li>
-                        <li>
-                            <a href="about.html" class="nav__link">About</a>
-                        </li>
-                        <li>
-                            <a href="projects.html" class="nav__link"
-                                >Projects</a
-                            >
-                        </li>
-                        <li>
-                            <a href="resume.html" class="nav__link active"
-                                >Resume</a
-                            >
-                        </li>
-                        <li>
-                            <a href="contact.html" class="nav__link">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <body data-title="meta.resume">
+        <div id="site-header"></div>
 
         <main>
-            <!-- ===== Page title ===== -->
             <section class="page-head">
                 <div class="container">
-                    <span class="section-label">Resume</span>
-                    <h1>Education and Experience</h1>
-                    <p>My background, skills and certificates in one place.</p>
+                    <span class="section-label" data-i18n="res.label"></span>
+                    <h1 data-i18n="res.title"></h1>
+                    <p data-i18n="res.text"></p>
 
                     <div class="resume__actions">
                         <a
@@ -58,84 +38,71 @@
                             class="btn btn-primary"
                             target="_blank"
                             rel="noopener"
-                            >View PDF</a
-                        >
+                            data-i18n="res.view"
+                        ></a>
                         <a
                             href="assets/documents/resume.pdf"
                             class="btn btn-outline"
                             download
-                            >Download PDF</a
-                        >
+                            data-i18n="res.download"
+                        ></a>
                     </div>
                 </div>
             </section>
 
-            <!-- ===== Resume content ===== -->
             <section class="section">
                 <div class="container resume__grid">
                     <div class="resume__main">
                         <div class="resume__block">
-                            <h2>Experience</h2>
+                            <h2 data-i18n="res.exp"></h2>
                             <div class="timeline">
-                                <div class="timeline__item">
-                                    <span class="timeline__date"
-                                        >2026 - Present</span
-                                    >
-                                    <h3>
-                                        Frontend Developer (Personal Projects)
-                                    </h3>
-                                    <p>
-                                        Building responsive websites with HTML,
-                                        CSS and JavaScript. Using Git for
-                                        version control and Vercel for
-                                        deployment.
-                                    </p>
+                                <div class="timeline__item reveal">
+                                    <span
+                                        class="timeline__date"
+                                        data-i18n="res.e1.date"
+                                    ></span>
+                                    <h3 data-i18n="res.e1.title"></h3>
+                                    <p data-i18n="res.e1.text"></p>
                                 </div>
 
-                                <div class="timeline__item">
-                                    <span class="timeline__date"
-                                        >2025 - 2026</span
-                                    >
-                                    <h3>Freelance Web Projects</h3>
-                                    <p>
-                                        Created a restaurant website and a
-                                        contact form with validation.
-                                    </p>
+                                <div class="timeline__item reveal">
+                                    <span
+                                        class="timeline__date"
+                                        data-i18n="res.e2.date"
+                                    ></span>
+                                    <h3 data-i18n="res.e2.title"></h3>
+                                    <p data-i18n="res.e2.text"></p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="resume__block">
-                            <h2>Education</h2>
+                            <h2 data-i18n="res.edu"></h2>
                             <div class="timeline">
-                                <div class="timeline__item">
-                                    <span class="timeline__date"
-                                        >2024 - Present</span
-                                    >
-                                    <h3>Web Development Course</h3>
-                                    <p>
-                                        Studying HTML, CSS, JavaScript and Git.
-                                        Replace with your school or university.
-                                    </p>
+                                <div class="timeline__item reveal">
+                                    <span
+                                        class="timeline__date"
+                                        data-i18n="res.d1.date"
+                                    ></span>
+                                    <h3 data-i18n="res.d1.title"></h3>
+                                    <p data-i18n="res.d1.text"></p>
                                 </div>
 
-                                <div class="timeline__item">
-                                    <span class="timeline__date"
-                                        >Before 2024</span
-                                    >
-                                    <h3>Secondary Education</h3>
-                                    <p>
-                                        Replace with your real education
-                                        details.
-                                    </p>
+                                <div class="timeline__item reveal">
+                                    <span
+                                        class="timeline__date"
+                                        data-i18n="res.d2.date"
+                                    ></span>
+                                    <h3 data-i18n="res.d2.title"></h3>
+                                    <p data-i18n="res.d2.text"></p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <aside class="resume__side">
-                        <div class="card">
-                            <h3>Skills</h3>
+                        <div class="card reveal">
+                            <h3 data-i18n="res.skills"></h3>
                             <div class="tags">
                                 <span class="tag">HTML5</span>
                                 <span class="tag">CSS3</span>
@@ -146,34 +113,37 @@
                             </div>
                         </div>
 
-                        <div class="card">
-                            <h3>Languages</h3>
+                        <div class="card reveal">
+                            <h3 data-i18n="res.languages"></h3>
                             <ul class="info-list">
                                 <li>
-                                    <strong>English</strong
-                                    ><span>Intermediate</span>
+                                    <strong data-i18n="res.lang.en"></strong
+                                    ><span data-i18n="res.lvl.mid"></span>
                                 </li>
                                 <li>
-                                    <strong>Russian</strong><span>Fluent</span>
+                                    <strong data-i18n="res.lang.ru"></strong
+                                    ><span data-i18n="res.lvl.fluent"></span>
                                 </li>
                                 <li>
-                                    <strong>Uzbek</strong><span>Native</span>
+                                    <strong data-i18n="res.lang.uz"></strong
+                                    ><span data-i18n="res.lvl.native"></span>
                                 </li>
                                 <li>
-                                    <strong>Kyrgyz</strong><span>Fluent</span>
+                                    <strong data-i18n="res.lang.ky"></strong
+                                    ><span data-i18n="res.lvl.fluent"></span>
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="card">
-                            <h3>Certificates</h3>
+                        <div class="card reveal">
+                            <h3 data-i18n="res.certs"></h3>
                             <ul class="info-list">
                                 <li>
-                                    <strong>Web Development Basics</strong
+                                    <strong data-i18n="res.c1"></strong
                                     ><span>2025</span>
                                 </li>
                                 <li>
-                                    <strong>JavaScript Course</strong
+                                    <strong data-i18n="res.c2"></strong
                                     ><span>2026</span>
                                 </li>
                             </ul>
@@ -183,57 +153,17 @@
             </section>
         </main>
 
-        <!-- ===== Footer ===== -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__grid">
-                    <div class="footer__brand">
-                        <a href="index.html" class="logo"
-                            >Azizillo<span>.</span></a
-                        >
-                        <p class="footer__text">
-                            Frontend developer building clean, modern and
-                            responsive web experiences.
-                        </p>
-                    </div>
+        <div id="site-footer"></div>
 
-                    <div>
-                        <h4 class="footer__title">Pages</h4>
-                        <ul class="footer__list">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="resume.html">Resume</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 class="footer__title">Social</h4>
-                        <ul class="footer__list">
-                            <li>
-                                <a href="#" target="_blank" rel="noopener"
-                                    >GitHub</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" target="_blank" rel="noopener"
-                                    >Telegram</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" target="_blank" rel="noopener"
-                                    >LinkedIn</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <p class="footer__bottom">
-                    &copy; 2026 Abdulhannonov Azizillo. All rights reserved.
-                </p>
-            </div>
-        </footer>
+        <script src="js/translations/en.js"></script>
+        <script src="js/translations/ru.js"></script>
+        <script src="js/translations/uz.js"></script>
+        <script src="js/translations/ky.js"></script>
+        <script src="js/navigation.js"></script>
+        <script src="js/projects.js"></script>
+        <script src="js/language.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/animations.js"></script>
+        <script src="js/contact.js"></script>
     </body>
 </html>

@@ -215,3 +215,143 @@
     font-size: 0.9rem;
     color: var(--muted);
 }
+/* ========== Header tools (Module 4) ========== */
+.header__tools {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    color: var(--heading);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    cursor: pointer;
+    transition:
+        border-color var(--transition),
+        background var(--transition);
+}
+
+.icon-btn:hover {
+    border-color: var(--primary-soft);
+}
+
+.lang-select {
+    height: 40px;
+    padding: 0 0.8rem;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--heading);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.lang-select:hover,
+.lang-select:focus {
+    outline: none;
+    border-color: var(--primary-soft);
+}
+
+.lang-select option {
+    background: var(--surface);
+    color: var(--heading);
+}
+
+/* Burger tugma (faqat mobilda ko'rinadi) */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.burger span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: var(--heading);
+    border-radius: 2px;
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.burger[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.burger[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Klaviatura bilan yurganda ko'rinadigan fokus */
+.icon-btn:focus-visible,
+.nav__link:focus-visible,
+.btn:focus-visible,
+.logo:focus-visible {
+    outline: 2px solid var(--primary-soft);
+    outline-offset: 2px;
+}
+
+/* Skroll qilganda Header soyasi */
+.header.scrolled {
+    box-shadow: var(--shadow);
+}
+
+/* ========== Animatsiyalar (Module 4) ========== */
+body {
+    animation: pageIn 0.4s ease;
+}
+
+@keyframes pageIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* JS ishlagandagina elementlar yashirinadi. JS ishlamasa, kontent ko'rinib turadi */
+.js .reveal:not(.visible) {
+    opacity: 0;
+}
+
+.reveal.visible {
+    animation: fadeUp 0.6s ease backwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body,
+    .reveal.visible {
+        animation: none;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
