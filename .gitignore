@@ -1,0 +1,25 @@
+# Операцион тизим файллари
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Махфий маълумотлар (Telegram токен шу ерда сақланади)
+.env
+.env.local
+.env.*.local
+
+# Vercel
+.vercel
+
+# Node (Vercel CLI ишлатилганда)
+node_modules/
+
+npm-debug.log*
+
+# Редактор
+.vscode/
+.idea/
+
+# Вақтинчалик файллар
+*.log
+*.tmp
