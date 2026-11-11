@@ -1,0 +1,217 @@
+/* ========== Header ========== */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--header-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-height: 72px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--heading);
+    letter-spacing: -0.02em;
+}
+
+.logo span {
+    color: var(--primary-soft);
+}
+
+/* ========== Navigation ========== */
+.nav__list {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.nav__link {
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-weight: 500;
+    color: var(--muted);
+    transition:
+        color var(--transition),
+        background var(--transition);
+}
+
+.nav__link:hover {
+    color: var(--heading);
+    background: var(--surface);
+}
+
+.nav__link.active {
+    color: #ffffff;
+    background: var(--primary);
+}
+
+/* ========== Buttons ========== */
+.btn {
+    display: inline-block;
+    padding: 0.85rem 1.8rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: var(--primary-soft);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--heading);
+    border-color: var(--primary-soft);
+}
+
+.btn-outline:hover {
+    background: var(--primary-soft);
+    color: #ffffff;
+}
+
+/* ========== Section title ========== */
+.section-head {
+    margin-bottom: 3rem;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--primary-soft);
+}
+
+.section-text {
+    margin-top: 0.8rem;
+    max-width: 600px;
+    color: var(--muted);
+}
+
+/* ========== Card ========== */
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.8rem;
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow);
+    border-color: var(--primary-soft);
+}
+
+.card__thumb {
+    height: 160px;
+    margin-bottom: 1.2rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-soft));
+}
+
+.card__text {
+    margin: 0.6rem 0 1.2rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+/* ========== Tags ========== */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    padding: 0.3rem 0.85rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    border-radius: 999px;
+    color: var(--text);
+    border: 1px solid var(--border);
+    background: transparent;
+}
+
+.card .tag {
+    border-color: var(--primary-soft);
+}
+
+/* ========== Footer ========== */
+.footer {
+    margin-top: 2rem;
+    padding: 3rem 0 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.footer__text {
+    margin-top: 0.8rem;
+    max-width: 320px;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.footer__title {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: var(--heading);
+}
+
+.footer__list li {
+    margin-bottom: 0.5rem;
+}
+
+.footer__list a {
+    color: var(--muted);
+    transition: color var(--transition);
+}
+
+.footer__list a:hover {
+    color: var(--primary-soft);
+}
+
+.footer__bottom {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
