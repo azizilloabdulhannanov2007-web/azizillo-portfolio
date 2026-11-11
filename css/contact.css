@@ -1,0 +1,128 @@
+/* ========== Contact layout ========== */
+.contact__grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+/* ========== Contact info ========== */
+.contact__info h2,
+.contact__form h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.contact__info > p {
+    margin-bottom: 1.5rem;
+    color: var(--muted);
+}
+
+.contact__list li {
+    margin-bottom: 1.1rem;
+}
+
+.contact__label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary-soft);
+}
+
+.contact__list a,
+.contact__list span:not(.contact__label) {
+    color: var(--heading);
+    font-weight: 500;
+}
+
+.contact__list a {
+    transition: color var(--transition);
+}
+
+.contact__list a:hover {
+    color: var(--primary-soft);
+}
+
+/* Forma kartasi hover'da ko'tarilmasin */
+.contact__form.card:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: var(--border);
+}
+
+/* ========== Form ========== */
+.form {
+    display: grid;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form__group label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--heading);
+}
+
+.form__group input,
+.form__group textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font: inherit;
+    color: var(--heading);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.form__group input::placeholder,
+.form__group textarea::placeholder {
+    color: var(--muted);
+    opacity: 0.7;
+}
+
+.form__group input:focus,
+.form__group textarea:focus {
+    outline: none;
+    border-color: var(--primary-soft);
+    box-shadow: 0 0 0 3px rgba(139, 124, 199, 0.25);
+}
+
+.form__group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form .btn {
+    justify-self: start;
+}
+
+/* Xabar holati (4-modulda JS ishlatadi) */
+.form__status {
+    min-height: 1.4rem;
+    font-size: 0.95rem;
+}
+
+.form__status.success {
+    color: #4ade80;
+}
+
+.form__status.error {
+    color: #f87171;
+}

@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Contact Abdulhannonov Azizillo: send a message via the form, Telegram or email."
+        />
+        <title>Contact | Azizillo</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/components.css" />
+        <link rel="stylesheet" href="css/contact.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+    <body>
+        <!-- ===== Header ===== -->
+        <header class="header">
+            <div class="container header__inner">
+                <a href="index.html" class="logo">Azizillo<span>.</span></a>
+
+                <nav class="nav" aria-label="Main navigation">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link">Home</a></li>
+                        <li>
+                            <a href="about.html" class="nav__link">About</a>
+                        </li>
+                        <li>
+                            <a href="projects.html" class="nav__link"
+                                >Projects</a
+                            >
+                        </li>
+                        <li>
+                            <a href="resume.html" class="nav__link">Resume</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav__link active"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- ===== Page title ===== -->
+            <section class="page-head">
+                <div class="container">
+                    <span class="section-label">Contact</span>
+                    <h1>Get in touch</h1>
+                    <p>
+                        Have a project or a question? Fill in the form and I
+                        will reply as soon as possible.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ===== Contact ===== -->
+            <section class="section">
+                <div class="container contact__grid">
+                    <div class="contact__info card">
+                        <h2>Contact info</h2>
+                        <p>You can also reach me directly:</p>
+
+                        <ul class="contact__list">
+                            <li>
+                                <span class="contact__label">Email</span>
+                                <a href="mailto:your@email.com"
+                                    >your@email.com</a
+                                >
+                            </li>
+                            <li>
+                                <span class="contact__label">Telegram</span>
+                                <a href="#" target="_blank" rel="noopener"
+                                    >@username</a
+                                >
+                            </li>
+                            <li>
+                                <span class="contact__label">GitHub</span>
+                                <a href="#" target="_blank" rel="noopener"
+                                    >github.com/username</a
+                                >
+                            </li>
+                            <li>
+                                <span class="contact__label">LinkedIn</span>
+                                <a href="#" target="_blank" rel="noopener"
+                                    >linkedin.com/in/username</a
+                                >
+                            </li>
+                            <li>
+                                <span class="contact__label">Location</span>
+                                <span>Kyrgyzstan</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact__form card">
+                        <h2>Send a message</h2>
+
+                        <form id="contact-form" class="form">
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label for="fullname">Full Name</label>
+                                    <input
+                                        type="text"
+                                        id="fullname"
+                                        name="fullname"
+                                        placeholder="Your name"
+                                        autocomplete="name"
+                                        minlength="2"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="email">Email</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="you@example.com"
+                                        autocomplete="email"
+                                        required
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="subject">Subject</label>
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="What is this about?"
+                                    minlength="3"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form__group">
+                                <label for="message">Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    placeholder="Write your message here..."
+                                    minlength="10"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <p
+                                id="form-status"
+                                class="form__status"
+                                aria-live="polite"
+                            ></p>
+
+                            <button type="submit" class="btn btn-primary">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ===== Footer ===== -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__brand">
+                        <a href="index.html" class="logo"
+                            >Azizillo<span>.</span></a
+                        >
+                        <p class="footer__text">
+                            Frontend developer building clean, modern and
+                            responsive web experiences.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="footer__title">Pages</h4>
+                        <ul class="footer__list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="footer__title">Social</h4>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="#" target="_blank" rel="noopener"
+                                    >GitHub</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener"
+                                    >Telegram</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="noopener"
+                                    >LinkedIn</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="footer__bottom">
+                    &copy; 2026 Abdulhannonov Azizillo. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -83,3 +83,35 @@
         padding: 2.5rem 1.2rem;
     }
 }
+/* ========== Module 3: Tablet (<= 900px) ========== */
+@media (max-width: 900px) {
+    .projects__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resume__grid,
+    .contact__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-head {
+        padding: 3.5rem 0 1.5rem;
+    }
+}
+
+/* ========== Module 3: Mobile (<= 600px) ========== */
+@media (max-width: 600px) {
+    .projects__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form__row {
+        grid-template-columns: 1fr;
+    }
+
+    .form .btn,
+    .resume__actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
