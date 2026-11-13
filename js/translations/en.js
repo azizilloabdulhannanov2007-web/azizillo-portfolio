@@ -142,5 +142,9 @@ window.translations.en = {
   "meta.404": "Page not found | Azizillo",
   "nf.title": "Page not found",
   "nf.text": "The page you are looking for does not exist or has been moved.",
-  "nf.btn": "Back to Home"
+  "nf.btn": "Back to Home",
+  "proj.1.title": "Restaurant Website",
+  "proj.1.text": "Responsive restaurant website with menu, gallery and contact sections.",
+    "proj.2.title": "Football Hub",
+  "proj.2.text": "Full-stack football web app with REST API, admin panel, shop and light/dark themes.",
 };
