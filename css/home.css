@@ -101,3 +101,13 @@
 .featured__grid .project-card .tags {
     margin-top: auto;
 }
+/* Hero rasm */
+.hero__avatar {
+    overflow: hidden;
+}
+
+.hero__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

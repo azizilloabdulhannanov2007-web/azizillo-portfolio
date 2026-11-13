@@ -88,3 +88,13 @@
     padding: 0.5rem 1.2rem;
     font-size: 0.9rem;
 }
+/* About rasm */
+.about__photo {
+    overflow: hidden;
+}
+
+.about__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
