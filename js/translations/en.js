@@ -136,5 +136,11 @@ window.translations.en = {
   "form.errName": "Enter your name (at least 2 characters).",
   "form.errEmail": "Enter a valid email address.",
   "form.errSubject": "Enter a subject (at least 3 characters).",
-  "form.errMessage": "Message must be at least 10 characters."
+  "form.errMessage": "Message must be at least 10 characters.",
+  
+
+  "meta.404": "Page not found | Azizillo",
+  "nf.title": "Page not found",
+  "nf.text": "The page you are looking for does not exist or has been moved.",
+  "nf.btn": "Back to Home"
 };

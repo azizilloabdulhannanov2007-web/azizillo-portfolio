@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex" />
+        <title>Page not found | Azizillo</title>
+        <link
+            rel="icon"
+            href="/assets/icons/favicon.svg"
+            type="image/svg+xml"
+        />
+
+        <script>
+            try {
+                document.documentElement.classList.add("js");
+                document.documentElement.dataset.theme =
+                    localStorage.getItem("theme") || "dark";
+            } catch (e) {}
+        </script>
+
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/components.css" />
+        <link rel="stylesheet" href="/css/responsive.css" />
+    </head>
+    <body data-title="meta.404">
+        <header class="header">
+            <div class="container header__inner">
+                <a href="/" class="logo">Azizillo<span>.</span></a>
+            </div>
+        </header>
+
+        <main class="container notfound">
+            <div class="notfound__code">404</div>
+            <h1 data-i18n="nf.title">Page not found</h1>
+            <p data-i18n="nf.text">
+                The page you are looking for does not exist or has been moved.
+            </p>
+            <a href="/" class="btn btn-primary" data-i18n="nf.btn"
+                >Back to Home</a
+            >
+        </main>
+
+        <script src="/js/translations/en.js"></script>
+        <script src="/js/translations/ru.js"></script>
+        <script src="/js/translations/uz.js"></script>
+        <script src="/js/translations/ky.js"></script>
+        <script src="/js/language.js"></script>
+    </body>
+</html>

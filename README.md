@@ -57,6 +57,14 @@ portfolio/
 
 Open `index.html` in VS Code with the Live Server extension.
 
+## Live Demo
+
+https://your-project.vercel.app
+
+## Deployment
+
+The site is deployed on Vercel. Every `git push` to `main` triggers a new deployment.
+
 ## Environment Variables (for Telegram)
 
 Set these in the Vercel dashboard. Never commit them.

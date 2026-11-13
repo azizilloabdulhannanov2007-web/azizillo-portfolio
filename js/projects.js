@@ -67,9 +67,9 @@
           <div>
             <h4 class="footer__title" data-i18n="footer.social"></h4>
             <ul class="footer__list">
-              <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
-              <li><a href="#" target="_blank" rel="noopener">Telegram</a></li>
-              <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/azizilloabdulhannanov2007-web" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://t.me/Saydullaevich_1" target="_blank" rel="noopener">Telegram</a></li>
+              <li><a href="https://www.linkedin.com/in/azizillo-abdulkhannanov-5a9528405/" target="_blank" rel="noopener">LinkedIn</a></li>
             </ul>
           </div>
         </div>
